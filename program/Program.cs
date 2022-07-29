@@ -38,3 +38,10 @@ string[] ExclusionOfElements(string[] array)
     }
     return newarray;
 }
+
+Console.Write("Input number of words: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] array=CreateStringArray(size);
+ShowArray(array);
+string[] newarray = ExclusionOfElements(array);
+ShowArray(newarray);
