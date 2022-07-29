@@ -15,3 +15,26 @@ void ShowArray(string[] array)
     Console.Write(array[i] + " ");
     Console.WriteLine();
 }
+
+string[] ExclusionOfElements(string[] array)
+{
+    int count=0;
+    for (int i=0; i<array.Length; i++)
+    {
+        if(array[i].Length<=3)
+        {
+            count++;
+        }
+    }
+    string[] newarray=new string[count];
+    int k=0;
+    for (int i=0; i<array.Length; i++)
+    {
+        if(array[i].Length<=3)
+        {
+            newarray[k] = array[i];
+            k++;
+        }
+    }
+    return newarray;
+}
